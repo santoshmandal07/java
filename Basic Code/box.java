@@ -5,9 +5,9 @@ class Box_Demo{
     double depth;
 
     //volume method
-    void volume(){
+    double volume(){
         double vol = width * height * depth;
-        System.out.println("Volume is " + vol);
+        return vol;
     }
 }
 
@@ -20,13 +20,15 @@ class box{
         mybox1.width = 10;
         mybox1.height = 20;
         mybox1.depth = 30;
-        mybox1.volume();
+        double vol1 = mybox1.volume();
+        System.out.println("Volume of box 1 is " + vol1);   
 
         //2nd box
         Box_Demo mybox2 = new Box_Demo();
         mybox2.width = 40;       
         mybox2.height = 50;
         mybox2.depth = 60;
-        mybox2.volume();
+        double vol2 = mybox2.volume();
+        System.out.println("Volume of box 2 is " + vol2);
     }
 }
